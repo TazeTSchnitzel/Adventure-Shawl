@@ -1,0 +1,13 @@
+{
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "files": [
+            "include/canonicalise.php"
+        ],
+        "psr-4": {
+            "ajf\\AdventureShawl\\": "include"
+        }
+    }
+}
