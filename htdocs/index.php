@@ -67,7 +67,7 @@ echo "<link rel=stylesheet href=style.css>";
 
 echo "<pre>";
 
-echo \htmlspecialchars(\wordwrap($output, 80));
+echo \htmlspecialchars($output);
 
 echo "<form method=post action=/>";
 echo "&gt;<input type=text name=command id=command size=79>";

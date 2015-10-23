@@ -1,6 +1,19 @@
 body {
     background-color: black;
     color: white;
+    margin: 0;
+    padding: 1em 1ch;
+}
+
+pre {
+    /* the 'em' unit is the height of 'M' - in a monospace font, the character
+     * cell height, hopefully. the 'ch' unit is the width of '0' - in a
+     * monospace font, the character cell width, hopefully.
+     */
+    max-width: 80ch;
+    word-break: break-word;
+    display: block;
+    margin: 0 auto;
 }
 
 pre input {
@@ -10,4 +23,6 @@ pre input {
     margin: 0;
     background-color: transparent;
     font: inherit;
+    width: 79ch;
+    max-width: calc(100% - 1ch);
 }
